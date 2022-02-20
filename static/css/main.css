@@ -105,7 +105,12 @@ html, body {
 .cardbody{
     display: flex;
     position: relative;
-    background-color: white;
+    /*background-color: white;*/
+    background-image: url("homepage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 60%;
     height: 80%;
     width: 80%;
     margin: auto auto;
