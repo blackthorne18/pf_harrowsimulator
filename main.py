@@ -35,7 +35,7 @@ def getharrowdeal(chosenstat):
             elif card[1][0] == alignment[i][j][0] or card[1][1] == alignment[i][j][1]:
                 card[1] = "Partial"
             else:
-                card[1] = ""
+                card[1] = "_"
             tit, match = card
             dm = {'gtit': tit, 'gmatch': match,
                   'gbody': harrow_details[tit]}

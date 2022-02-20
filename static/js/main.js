@@ -5,9 +5,11 @@ let g_chosenstat = "";
 
 function togglechoosecard() {
     var state = document.getElementById('cardselectorholder').style.display;
+    console.log("togglestate", state);
     if(state === "none" || state === ""){
         document.getElementById('cardselectorholder').style.display = "flex";
         document.getElementById('plcardfill').style.display = "none";
+        document.getElementById('cardfill').style.display = "none";
         document.getElementById('chooseview').style.display = "none";
         document.getElementById('chooseview2').style.display = "none";
     }else{

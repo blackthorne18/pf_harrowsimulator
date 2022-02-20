@@ -30,7 +30,7 @@ html, body {
 
 .row2{
     position: absolute;
-    top: 30%;
+    top: 70%;
     left: 35%;
     height: 10%;
     width: 30%;
@@ -47,7 +47,7 @@ html, body {
     color: black;
     border-radius: 0.5em;
     text-align: center;
-    width: 12%;
+    width: 8%;
     height: 20%;
     padding-top: 0.5em;
     font-size: 1.2em;
@@ -105,7 +105,7 @@ html, body {
 .cardbody{
     display: flex;
     position: relative;
-    background-color: hotpink;
+    background-color: white;
     height: 80%;
     width: 80%;
     margin: auto auto;
@@ -120,6 +120,12 @@ html, body {
 
 .cardfill{
     display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.openingtext{
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
@@ -163,7 +169,7 @@ html, body {
     color: black;
     border-radius: 0.5em;
     text-align: center;
-    width: 12%;
+    width: 8%;
     height: 20%;
     padding-top: 0.5em;
     font-size: 1.2em;
