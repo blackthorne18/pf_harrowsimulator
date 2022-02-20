@@ -1,0 +1,221 @@
+* {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row0{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 20%;
+}
+
+.row1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 20%;
+}
+
+.row2{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    height: 10%;
+    width: 30%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+
+.choosecard{
+    margin: 1.75%;
+    background-color: white;
+    color: black;
+    border-radius: 0.5em;
+    text-align: center;
+    width: 12%;
+    height: 20%;
+    padding-top: 0.5em;
+    font-size: 1.2em;
+}
+
+.choosecard:hover{
+    cursor: pointer;
+}
+
+.cardselector{
+    display: block;
+    background-color: #800000;
+    color: black;
+    border-radius: 0.5em;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    padding-top: 1.7em;
+}
+
+.statdropdown{
+    font-size: 1.2em;
+    height: 50%;
+    width: 60%;
+    background-color: white;
+    color: black;
+}
+
+.statval{
+    background-color: white;
+    color: black;
+}
+
+.sbmtbtn{
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    border-radius: 0.2em;
+}
+
+.sbmtbtn:hover{
+    cursor: pointer;
+}
+
+.noselect{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.cardbody{
+    display: flex;
+    position: relative;
+    background-color: hotpink;
+    height: 80%;
+    width: 80%;
+    margin: auto auto;
+}
+
+.welcomebanner{
+    padding-top: 1.5em;
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+}
+
+.cardfill{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.gridbox{
+    background-color: rgb(128, 0, 0, 1);
+    color: black;
+    height: 32.6%;
+    width: 32.8%;
+    border: 2px solid white;
+    border-style: inset;
+}
+
+.gtitle{
+    background-color: rgb(128, 0, 0, 1);
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 1.5% auto;
+}
+.gmatch{
+    background-color: rgb(128, 0, 0, 1);
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1.5% auto;
+    border-bottom: 2px solid white;
+}
+.gbody{
+    background-color: rgb(128, 0, 0, 1);
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1.5% auto;
+}
+
+.chooseview{
+    margin: 1.75%;
+    background-color: white;
+    color: black;
+    border-radius: 0.5em;
+    text-align: center;
+    width: 12%;
+    height: 20%;
+    padding-top: 0.5em;
+    font-size: 1.2em;
+}
+
+.chooseview:hover{
+    cursor: pointer;
+}
+
+.chooseviewblank{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(128, 0, 0, 1);
+    border-radius: 0.5em;
+    text-align: center;
+    width: 20%;
+    height: 35%;
+    padding-top: 0.3em;
+    font-size: 2em;
+}
+
+
+.plcardfill{
+    display: none;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.plgridbox{
+    background-color: rgb(128, 0, 0, 1);
+    color: black;
+    height: 32.6%;
+    width: 32.8%;
+    border: 2px solid white;
+    border-style: inset;
+}
+
+.plgtitle{
+    background-color: rgb(128, 0, 0, 1);
+    width: 100%;
+    text-align: center;
+    font-size: 2.2em;
+    margin: 10% auto;
+}
+.plgmatch{
+    background-color: rgb(128, 0, 0, 1);
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 2% auto;
+}

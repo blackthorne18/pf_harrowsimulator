@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Pathfinder Harrow</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <div class="row0 noselect">
+            <div class="welcomebanner" id="welcomebanner">Pathfinder Harrow Deck Simulator</div>
+        </div>
+        <div class="cardbody" id="cardbody">
+            <div class="cardfill" id="cardfill">
+                <div class="gridbox" id="grid11">
+                    <div class="gtitle" id="gtit11"></div>
+                    <div class="gmatch" id="gmatch11"></div>
+                    <div class="gbody" id="gbody11"></div>
+                </div>
+                <div class="gridbox" id="grid12">
+                    <div class="gtitle" id="gtit12"></div>
+                    <div class="gmatch" id="gmatch12"></div>
+                    <div class="gbody" id="gbody12"></div>
+                </div>
+                <div class="gridbox" id="grid13">
+                    <div class="gtitle" id="gtit13"></div>
+                    <div class="gmatch" id="gmatch13"></div>
+                    <div class="gbody" id="gbody13"></div>
+                </div>
+                <div class="gridbox" id="grid21">
+                    <div class="gtitle" id="gtit21"></div>
+                    <div class="gmatch" id="gmatch21"></div>
+                    <div class="gbody" id="gbody21"></div>
+                </div>
+                <div class="gridbox" id="grid22">
+                    <div class="gtitle" id="gtit22"></div>
+                    <div class="gmatch" id="gmatch22"></div>
+                    <div class="gbody" id="gbody22"></div>
+                </div>
+                <div class="gridbox" id="grid23">
+                    <div class="gtitle" id="gtit23"></div>
+                    <div class="gmatch" id="gmatch23"></div>
+                    <div class="gbody" id="gbody23"></div>
+                </div>
+                <div class="gridbox" id="grid31">
+                    <div class="gtitle" id="gtit31"></div>
+                    <div class="gmatch" id="gmatch31"></div>
+                    <div class="gbody" id="gbody31"></div>
+                </div>
+                <div class="gridbox" id="grid32">
+                    <div class="gtitle" id="gtit32"></div>
+                    <div class="gmatch" id="gmatch32"></div>
+                    <div class="gbody" id="gbody32"></div>
+                </div>
+                <div class="gridbox" id="grid33">
+                    <div class="gtitle" id="gtit33"></div>
+                    <div class="gmatch" id="gmatch33"></div>
+                    <div class="gbody" id="gbody33"></div>
+                </div>
+            </div>
+            <div class="plcardfill" id="plcardfill">
+                <div class="plgridbox" id="plgrid11">
+                    <div class="plgtitle" id="plgtit11"></div>
+                    <div class="plgmatch" id="plgmatch11"></div>
+                </div>
+                <div class="plgridbox" id="plgrid12">
+                    <div class="plgtitle" id="plgtit12"></div>
+                    <div class="plgmatch" id="plgmatch12"></div>
+                </div>
+                <div class="plgridbox" id="plgrid13">
+                    <div class="plgtitle" id="plgtit13"></div>
+                    <div class="plgmatch" id="plgmatch13"></div>
+                </div>
+                <div class="plgridbox" id="plgrid21">
+                    <div class="plgtitle" id="plgtit21"></div>
+                    <div class="plgmatch" id="plgmatch21"></div>
+                </div>
+                <div class="plgridbox" id="plgrid22">
+                    <div class="plgtitle" id="plgtit22"></div>
+                    <div class="plgmatch" id="plgmatch22"></div>
+                </div>
+                <div class="plgridbox" id="plgrid23">
+                    <div class="plgtitle" id="plgtit23"></div>
+                    <div class="plgmatch" id="plgmatch23"></div>
+                </div>
+                <div class="plgridbox" id="plgrid31">
+                    <div class="plgtitle" id="plgtit31"></div>
+                    <div class="plgmatch" id="plgmatch31"></div>
+                </div>
+                <div class="plgridbox" id="plgrid32">
+                    <div class="plgtitle" id="plgtit32"></div>
+                    <div class="plgmatch" id="plgmatch32"></div>
+                </div>
+                <div class="plgridbox" id="plgrid33">
+                    <div class="plgtitle" id="plgtit33"></div>
+                    <div class="plgmatch" id="plgmatch33"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row2" id="cardselectorholder" style="display: none;">
+            <form name="cardselector" id="cardselector" method="post" class="cardselector">
+                <select class="statdropdown" id="chosenability" name="chosenability">
+                    <option class="statval" value="str">Strength</option>
+                    <option class="statval" value="dex">Dexterity</option>
+                    <option class="statval" value="con">Constitution</option>
+                    <option class="statval" value="wis">Wisdom</option>
+                    <option class="statval" value="int">Intelligence</option>
+                    <option class="statval" value="cha">Charisma</option>
+                </select>
+                <input class="sbmtbtn" type="submit" name="send" value="Submit" />
+            </form>
+        </div>
+        <div class="row1 noselect" id="choosecardbox">
+            <div class="choosecard noselect" id="choosecard" onclick="togglechoosecard()">
+                Choose Harrow Suit
+            </div>
+            <div class="chooseviewblank noselect" id="chooseview2"></div>
+            <div class="chooseview noselect" id="chooseview" onclick="togglecardview()">
+                Toggle Player View
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
