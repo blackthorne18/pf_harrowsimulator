@@ -3,6 +3,10 @@ document.getElementById('chooseview').style.display = "none";
 document.getElementById('chooseview2').style.display = "none";
 let g_chosenstat = "";
 
+function removeselector(){
+    document.getElementById('cardselectorholder').style.display = "none";
+}
+
 function togglechoosecard() {
     var state = document.getElementById('cardselectorholder').style.display;
     console.log("togglestate", state);
