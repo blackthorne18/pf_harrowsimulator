@@ -116,9 +116,12 @@
             <div class="choosecard noselect" id="choosecard" onclick="togglechoosecard()">
                 Deal Cards
             </div>
-            <div class="chooseviewblank noselect" id="chooseview2"></div>
+            <div class="chooseviewblank noselect" id="chooseview2" onclick="copyasciitable()"></div>
             <div class="chooseview noselect" id="chooseview" onclick="togglecardview()">
                 Toggle View
+            </div>
+            <div class="copypopup" id="copypopup">
+                ASCII version copied to clipboard
             </div>
         </div>
         <script src="{{ url_for('static', filename='js/main.js') }}"></script>

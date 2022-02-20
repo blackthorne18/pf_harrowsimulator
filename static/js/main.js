@@ -2,6 +2,7 @@ document.getElementById('cardfill').style.display = "none";
 document.getElementById('chooseview').style.display = "none";
 document.getElementById('chooseview2').style.display = "none";
 let g_chosenstat = "";
+let asciitable = null;
 
 function removeselector(){
     document.getElementById('cardselectorholder').style.display = "none";
@@ -52,7 +53,9 @@ function cardselector(e) {
     }).then(function (text) {
         togglechoosecard();
 
-        var modes_db = text;
+        var modes_db = text['modes_db'];
+        asciitable = text['asciitable'];
+
         document.getElementById('chooseview2').innerHTML = g_chosenstat + ": Player's View";
         for (const [key, value] of Object.entries(modes_db)) {
             document.getElementById('gtit' + key).innerHTML = value['gtit'];
@@ -68,7 +71,14 @@ function cardselector(e) {
 //------------------------------Above Section Ends ------------------------------
 
 //----------------------- Section Name ------------------------------
+function copyasciitable() {
+    navigator.clipboard.writeText(asciitable)
+    document.getElementById('copypopup').style.display = "block";
+    setTimeout(()=>{
+        document.getElementById('copypopup').style.display = "none";
+    },1000);
 
+}
 //------------------------------Above Section Ends ------------------------------
 
 

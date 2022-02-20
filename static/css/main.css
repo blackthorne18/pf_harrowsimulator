@@ -28,6 +28,20 @@ html, body {
     height: 20%;
 }
 
+.copypopup{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    height: 10%;
+    width: 20%;
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    padding-top: 1em;
+    border-radius: 5em;
+}
+
 .row2{
     position: absolute;
     top: 70%;
@@ -197,6 +211,10 @@ html, body {
     height: 35%;
     padding-top: 0.3em;
     font-size: 2em;
+}
+
+.chooseviewblank:hover{
+    cursor: copy;
 }
 
 
