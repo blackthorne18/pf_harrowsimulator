@@ -1,0 +1,33 @@
+{
+    "str": [
+        "Palladin -LG", "Keep -NG", "Big Sky -CG",
+        "Forge -LN", "Bear -NN", "Uprising -CN",
+        "Fiend -LE", "Beating -NE", "Cyclone -CE"
+    ],
+    "dex": [
+        "Dance -LG", "Cricket -NG", "Juggler -CG",
+        "Locksmith -LN", "Peacock -NN", "Rabbit Prince -CN",
+        "Avalanche -LE", "Crows -NE", "Demons Lantern -CE"
+    ],
+    "con": [
+        "Trumpet -LG", "Survivor -NG", "Desert -CG",
+        "Brass Dwarf -LN", "Teamster -NN", "Mountain Man -CN",
+        "Tangled Briar -LE", "Sickness -NE", "Waxworks -CE"
+    ],
+    "wis": [
+        "Winged Serpent -LG", "Midwife -NG", "Publican -CG",
+        "Queen Mother -LN", "Owl -NN", "Carnival -CN",
+        "Eclipse -LE", "Mute Hag -NE", "Lost -CE"
+    ],
+    "int": [
+        "Hidden Truth -LG", "Wanderer -NG", "Joke -CG",
+        "Inquisitor -LN", "Foreign Trader -NN", "Vision -CN",
+        "Rakshasa -LE", "Idiot -NE", "Snakebite -CE"
+    ],
+    "cha": [
+        "Empty Throne -LG", "Theatre -NG", "Unicorn -CG",
+        "Marriage -LN", "Twin -NN", "Courtesan -CN",
+        "Tyrant -LE", "Betrayal -NE", "Liar -CE"
+    ]
+}
+

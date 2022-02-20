@@ -44,10 +44,11 @@ alignment = [
 ]
 
 gridid = {
-    1: (1, 1), 2: (1, 2), 3: (1,3),
-    4: (2, 1), 5: (2, 2), 6: (2,3),
-    7: (3, 1), 8: (3, 2), 9: (3,3)
+    1: (1, 1), 2: (1, 2), 3: (1, 3),
+    4: (2, 1), 5: (2, 2), 6: (2, 3),
+    7: (3, 1), 8: (3, 2), 9: (3, 3)
 }
+
 
 def getgrid(key, pos):
     card_grid = [[0 for _ in range(3)] for _ in range(3)]
@@ -57,20 +58,20 @@ def getgrid(key, pos):
     grid = [[0 for _ in range(3)] for _ in range(3)]
     ct = 0
     for i in range(len(grid)):
-            for j in range(len(grid[i])):
-                    grid[i][j] = s[ct]
-                    card = harrow[key][s[ct]].split(" -")
-                    if card[1] == alignment[i][j]:
-                        card[1] = "true"
-                    elif card[1] == alignment[j][i]:
-                        card[1] = "oppo"
-                    elif card[1][0] == alignment[i][j][0] or card[1][1] == alignment[i][j][1]:
-                        card[1] = "part"
-                    else:
-                        card[1] = "misc"
-                    card_grid[i][j] = " -".join(card)
-                    card_player[i][j] = card[0]
-                    ct += 1
+        for j in range(len(grid[i])):
+            grid[i][j] = s[ct]
+            card = harrow[key][s[ct]].split(" -")
+            if card[1] == alignment[i][j]:
+                card[1] = "true"
+            elif card[1] == alignment[j][i]:
+                card[1] = "oppo"
+            elif card[1][0] == alignment[i][j][0] or card[1][1] == alignment[i][j][1]:
+                card[1] = "part"
+            else:
+                card[1] = "misc"
+            card_grid[i][j] = " -".join(card)
+            card_player[i][j] = card[0]
+            ct += 1
     # print(tabulate(np.array(alignment), tablefmt="grid"))
     # print(tabulate(np.array(grid), tablefmt="grid"))
     os.system("clear")
@@ -83,4 +84,3 @@ def getgrid(key, pos):
 key, pos = sys.argv[1].split(",")
 pos = gridid[int(pos)]
 getgrid(key, pos)
-
